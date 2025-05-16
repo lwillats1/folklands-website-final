@@ -141,15 +141,13 @@ a:active{
 }
 
 .captionandmap {
-   /* width: auto;
-    height: auto;*/
-display: flex;
+    display: flex;
   align-items: center;
   justify-content: center;
   gap: 4vw; /* Space between text and map */
   margin: auto;
   padding: 2vh;
-  }
+}
   
 .mapheading{
   text-align: center;  /* Centers text horizontally */
@@ -159,7 +157,7 @@ display: flex;
   flex-direction: column;
   align-items: center; /* Centers horizontally */
   justify-content: center; /* Centers vertically */
-  height: 100vh; /* Adjust based on layout */
+  height: 50vh; /* Adjust based on layout */
 }
 
 
@@ -185,13 +183,13 @@ display: flex;
     top: 400vh;
 }
 
-  /* Styling the caption. You can position it on top or below the map */
-  .caption{ 
+.caption{ 
   font-size: clamp(18px, 2vw, 4vw);
   text-align: left;
   max-width: 30vw;
   }
-  .caption2{
+
+.caption2{
     display: flex;
     font-size: clamp(24px, 3vw, 5vw);
     z-index: 10;
