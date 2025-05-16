@@ -164,8 +164,7 @@ display: flex;
 
 
 .captionandmap iframe {
-  min-width: 20%; */
-min-width: 20%;
+  min-width: 20%;
    max-width: 100%;
   height: 30vw;
   width: 30vw;
@@ -178,28 +177,19 @@ min-width: 20%;
     image-resolution:1000%;
     position:absolute;
     height:auto;
+    display: flex;
     width: 120vw;
     z-index: -2;
     opacity: 20%;
+    left: 25vw;
+    top: 400vh;
 }
 
   /* Styling the caption. You can position it on top or below the map */
   .caption{ 
-    /*justify-content: center;
-    align-items: center;
-    font-size: clamp(24px, 3vw, 5vw);
-    max-width: 100%;
-    text-align: center;
-    padding: 2vw;
-    width: 25vw;
-    height: 30vh;*/
-
-
   font-size: clamp(18px, 2vw, 4vw);
   text-align: left;
   max-width: 30vw;
-
-    
   }
   .caption2{
     display: flex;
