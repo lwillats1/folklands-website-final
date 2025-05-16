@@ -22,9 +22,10 @@ h1 {
     display: inline-block;
     color: #00AF05;
     font-family: Inspiration;
-    font-size: clamp(120px, 30vw, 360px);
+    font-size: clamp(120px, 25vw, 40vw);
     font-weight: 400;
-    top:50vh;
+    margin-top: 10vw;
+   /* top:40vh;*/
     z-index: 50;
 }
 
@@ -41,7 +42,11 @@ h2{
 h3{
     font-size: 8vw;
     font-weight: lighter;
+    margin: 0;
 
+}
+.toolbar{
+  top: 0;
 }
 
 img {
@@ -65,12 +70,25 @@ p {
 }
 
 a {
+   
     color:#00A405;
     cursor: pointer;
     text-decoration: none;
+   }
 
-
+.streamlinks a{
+    display:inline-flex;
+    background-color: #09290a78;
+    padding: 1vw;
+    padding-top: .01vw;
+    padding-bottom: .01vw;
+    border-radius: 30%;
+    text-align: center;
+    line-height: 200%;
+    margin-bottom: 3vw;
+    font-size: 5vw;
 }
+
 
 a:hover{
     color: #09290A;
