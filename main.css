@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
+
+
+html,
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+    color:#00AF05;
+    font-family: "Jolly Lodger", system-ui;
+    font-weight: 400;
+    font-size: 128px;
+    font-style: normal;
+    text-align: center;
+    
+}
+
+h1 {
+    display: inline-block;
+    color: #00AF05;
+    font-family: Inspiration;
+    font-size: clamp(120px, 30vw, 360px);
+    font-weight: 400;
+    top:50vh;
+    z-index: 50;
+}
+
+h1 span:hover {
+    animation: bounce 1s ease infinite;
+}
+
+h2{
+    font-size: 15vw;
+    font-weight: lighter;
+
+}
+
+h3{
+    font-size: 8vw;
+    font-weight: lighter;
+
+}
+
+img {
+    max-width: 100%;
+}
+
+
+p {
+    color: #00A405;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    text-indent: 20px;
+    font-size:5vh;
+    font-style: normal;
+    font-weight: 400;
+    line-height:auto;
+    border-radius: 80px;
+    padding-left: 10vh;
+    padding-right: 10vh;
+    padding-top: 5vh;
+    padding-bottom: 5vh;
+}
+
+a {
+    color:#00A405;
+    cursor: pointer;
+    text-decoration: none;
+
+
+}
+
+a:hover{
+    color: #09290A;
+    text-decoration: none;
+}
+a:visited{
+    color: #09290A;
+    text-decoration: none;
+}
+a:active{
+    color: #09290A;
+    text-decoration: none;
+}
+
+
+.info-box {
+    text-align: left;
+    display: flex;
+    align-items: center;
+    gap: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    width: 90%;
+}
+
+.info-box a {
+    padding: 0;
+}
+
+.info-box p {
+    padding: 0;
+    font-size: clamp(24px, 4vw, 48px);
+}
+
+.info-box img {
+    object-fit: auto;
+    width: 50%;
+    height: auto;
+}
+
+@media (width <= 600px) {
+    .info-box {
+        flex-direction: column;
+    }
+}
+
+
+
+
+.info-box2 {
+    position: relative; /* Necessary if you'll position inner elements absolutely */
+    width: auto;
+    height: auto;
+    overflow: hidden; /* Prevents any overflow if inner elements scale */
+  }
+  
+.info-box2.map {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  width: 100%;
+}
+
+
+.info-box2 img{
+    mix-blend-mode:green;
+    image-resolution:1000%;
+    position: absolute;
+    top:10vh;
+    height:auto;
+    width: 120vw;
+    z-index: -2;
+    opacity: 20%;
+}
+
+  /* Styling the caption. You can position it on top or below the map */
+  .caption{
+    font-size: clamp(24px, 4vw, 48px);
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+  }
+  .caption2{
+    font-size: clamp(24px, 4vw, 48px);
+    z-index: 10;
+    left: 1rem;
+    right: 1rem;
+    text-align: center;
+
+  }
+  
+.general{
+    align-content: center; 
+    font-size: 10%; 
+}
+
+.general2{
+    display: flex;
+    text-align: right;
+    align-content:center;
+}
+
+.general3{
+    display: flex;
+    text-align: left;
+    align-content:left;
+}
+
+.general3 p {
+    width: 50%;
+}
+
+.general3 a {
+    width: 50%;
+}
+
+
+.spotify{
+    text-align: right;
+    padding-right: 10vw;
+}
+.spotifylite{
+    padding-bottom: 10vh;
+}
+
+#social{
+    padding-left: 10vh;
+    text-align: left;
+}
+.socialite{
+    line-height: 5vw;
+    padding-bottom: 10vh;
+}
+
+.disclaimer{
+    background-color: #09290a78;
+    padding: 2vw;
+    margin: 0;
+    font-size: clamp(24px, 64px, 150px);
+}
