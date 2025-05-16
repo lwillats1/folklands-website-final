@@ -140,24 +140,43 @@ a:active{
     }
 }
 
-.info-box2 {
-    width: auto;
-    height: auto;
-    overflow: hidden; /* Prevents any overflow if inner elements scale */
+.captionandmap {
+   /* width: auto;
+    height: auto;*/
+display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 4vw; /* Space between text and map */
+  margin: auto;
+  padding: 2vh;
   }
   
-.info-box2 .map {
-  max-width: 100%;
-  margin: 0 auto;
-  width: 50vw;
-  height: 75vh;
+.mapheading{
+  text-align: center;  /* Centers text horizontally */
+  width: 100%;         /* Ensures it spans the full width */
+  margin: 0 auto;      /* Centers the heading within its container */
+    display: flex;
+  flex-direction: column;
+  align-items: center; /* Centers horizontally */
+  justify-content: center; /* Centers vertically */
+  height: 100vh; /* Adjust based on layout */
 }
 
-.info-box2 img{
+
+.captionandmap iframe {
+  min-width: 20%; */
+min-width: 20%;
+   max-width: 100%;
+  height: 30vw;
+  width: 30vw;
+  border-radius: 10px;
+  border: none;
+}
+
+.captionandmap img{
     mix-blend-mode:green;
     image-resolution:1000%;
-    position: absolute;
-    top:10vh;
+    position:absolute;
     height:auto;
     width: 120vw;
     z-index: -2;
@@ -166,22 +185,21 @@ a:active{
 
   /* Styling the caption. You can position it on top or below the map */
   .caption{ 
-    justify-content: left;
+    /*justify-content: center;
+    align-items: center;
     font-size: clamp(24px, 3vw, 5vw);
     max-width: 100%;
     text-align: center;
-    padding: 0;
-    height: 30vh;
+    padding: 2vw;
+    width: 25vw;
+    height: 30vh;*/
 
+
+  font-size: clamp(18px, 2vw, 4vw);
   text-align: left;
-    display: flex;
-    align-items:left;
-    gap: 5%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2vh;
-    width: 90%;
+  max-width: 30vw;
 
+    
   }
   .caption2{
     display: flex;
