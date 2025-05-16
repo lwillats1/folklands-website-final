@@ -23,7 +23,7 @@ h1 {
     font-family: Inspiration;
     font-size: clamp(120px, 25vw, 40vw);
     font-weight: 400;
-    margin-top: 10vw;
+    margin-top: 14vw;
    /* top:40vh;*/
     z-index: 50;
 }
@@ -67,6 +67,32 @@ p {
     padding-right: 10vh;
     padding-top: 5vh;
     padding-bottom: 5vh;
+}
+
+.pegasus{
+filter: invert(100%);
+    image-resolution:1000%;
+    position:absolute;
+    height:auto;
+    display: flex;
+    width: 120vw;
+    z-index: -2;
+    opacity: 2%;
+    left: 25vw;
+    top:150vh;
+}
+
+.unicorn{
+filter: invert(100%);
+    image-resolution:1000%;
+    position:absolute;
+    height:auto;
+    display: flex;
+    width: 45vw;
+    z-index: -2;
+    opacity: 2%;
+    left: 25vw;
+    top:2vh;
 }
 
 a {
