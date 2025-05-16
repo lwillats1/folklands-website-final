@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Jolly+Lodger&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inspiration&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&display=swap');
 
 html,
 *, *::before, *::after {
@@ -10,11 +10,10 @@ html,
 body{
     background-color: black;
     color:#00AF05;
-    font-family: "Jolly Lodger", system-ui;
-    font-weight: 400;
-    font-size: 128px;
+    font-weight:lighter;
     font-style: normal;
     text-align: center;
+    font-family:"Lato", system-ui;
     
 }
 
@@ -34,15 +33,17 @@ h1 span:hover {
 }
 
 h2{
-    font-size: 15vw;
+    font-size: 10vw;
     font-weight: lighter;
+    font-family: "Jolly Lodger", system-ui;
 
 }
 
 h3{
-    font-size: 8vw;
+    font-size: 6vw;
     font-weight: lighter;
     margin: 0;
+    font-family: "Jolly Lodger", system-ui;
 
 }
 .toolbar{
@@ -56,11 +57,10 @@ img {
 
 p {
     color: #00A405;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-indent: 20px;
-    font-size:5vh;
+   /* font-size:5vh; */
+    font-size:clamp(3vh, 4vh, 6vh);
     font-style: normal;
-    font-weight: 400;
     line-height:auto;
     border-radius: 80px;
     padding-left: 10vh;
@@ -70,7 +70,6 @@ p {
 }
 
 a {
-   
     color:#00A405;
     cursor: pointer;
     text-decoration: none;
@@ -82,11 +81,14 @@ a {
     padding: 1vw;
     padding-top: .01vw;
     padding-bottom: .01vw;
-    border-radius: 30%;
+    border-radius: 20%;
     text-align: center;
     line-height: 200%;
     margin-bottom: 3vw;
+    margin-left: 1vw;
+    margin-right: 1vw;
     font-size: 5vw;
+    font-family: "Jolly Lodger", system-ui;
 }
 
 
@@ -121,12 +123,14 @@ a:active{
 
 .info-box p {
     padding: 0;
-    font-size: clamp(24px, 4vw, 48px);
+    /*font-size: clamp(24px, 4vw, 48px);*/
+    font-size:clamp(3vh, 4vh, 6vh);
+
 }
 
 .info-box img {
     object-fit: auto;
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -135,9 +139,6 @@ a:active{
         flex-direction: column;
     }
 }
-
-
-
 
 .info-box2 {
     position: relative; /* Necessary if you'll position inner elements absolutely */
@@ -156,7 +157,6 @@ a:active{
   padding: 20px;
   width: 100%;
 }
-
 
 .info-box2 img{
     mix-blend-mode:green;
@@ -188,12 +188,26 @@ a:active{
 .general{
     align-content: center; 
     font-size: 10%; 
+    max-width: 100%;
+    margin-left: 3vw;
+    text-align: left;
+}
+.general img{
+    max-width: 100%;
+    width: 70vw;
+    height: auto;
+    gap: 20%;
 }
 
 .general2{
     display: flex;
     text-align: right;
     align-content:center;
+}
+.general2 img{
+    max-width: 100%;
+    width: 40vw;
+    height: auto;
 }
 
 .general3{
@@ -209,7 +223,11 @@ a:active{
 .general3 a {
     width: 50%;
 }
-
+.general3 img{
+    max-width: 100%;
+    width:20vw;
+    height: auto;
+}
 
 .spotify{
     text-align: right;
@@ -222,6 +240,7 @@ a:active{
 #social{
     padding-left: 10vh;
     text-align: left;
+    padding-bottom:1vh;
 }
 .socialite{
     line-height: 5vw;
