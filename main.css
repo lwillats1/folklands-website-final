@@ -141,21 +141,16 @@ a:active{
 }
 
 .info-box2 {
-    position: relative; /* Necessary if you'll position inner elements absolutely */
     width: auto;
     height: auto;
     overflow: hidden; /* Prevents any overflow if inner elements scale */
   }
   
-.info-box2.map {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  max-width: 1000px;
+.info-box2 .map {
+  max-width: 100%;
   margin: 0 auto;
-  padding: 20px;
-  width: 100%;
+  width: 50vw;
+  height: 75vh;
 }
 
 .info-box2 img{
@@ -170,14 +165,27 @@ a:active{
 }
 
   /* Styling the caption. You can position it on top or below the map */
-  .caption{
-    font-size: clamp(24px, 4vw, 48px);
-    left: 1rem;
-    right: 1rem;
+  .caption{ 
+    justify-content: left;
+    font-size: clamp(24px, 3vw, 5vw);
+    max-width: 100%;
     text-align: center;
+    padding: 0;
+    height: 30vh;
+
+  text-align: left;
+    display: flex;
+    align-items:left;
+    gap: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2vh;
+    width: 90%;
+
   }
   .caption2{
-    font-size: clamp(24px, 4vw, 48px);
+    display: flex;
+    font-size: clamp(24px, 3vw, 5vw);
     z-index: 10;
     left: 1rem;
     right: 1rem;
