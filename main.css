@@ -60,50 +60,6 @@ img {
     max-width: 100%;
 }
 
-.logo{
-    position: absolute;
-    max-width: 25%;
-    display: flex;
-    margin-left: 10vw;
-    margin-bottom: 0;
-    z-index: -1;
-    opacity: 50%;
-}
-
-.logo2{
-    position: absolute;
-    max-width: 25%;
-    display: inline-block;
-    margin-bottom: 0;
-   margin-right:10vw;
-    z-index: -1;
-    opacity: 50%;
-    top: 54vw;
-    left: 65vw;
-}
-.logo3{
-    position: absolute;
-    max-width: 25%;
-    display: inline-block;
-    margin-bottom: 0;
-   margin-right:10vw;
-    z-index: -1;
-    opacity: 50%;
-    top: 175vw;
-    left: 65vw;
-}
-
-.logo4{
-    position: absolute;
-    max-width: 25%;
-    display: flex;
-    margin-left: 10vw;
-    margin-bottom: 0;
-    z-index: -1;
-    opacity: 50%;
-    right:65vw;
-}
-
 
 p {
     color: #00A405;
@@ -221,9 +177,6 @@ a:active{
     width: 90%;
 }
 
-.info-box a {
-  
-}
 
 .info-box p {
     padding: 0;
@@ -348,11 +301,12 @@ a:active{
 }
 
 .spotify{
-    text-align: right;
-    padding-right: 10vw;
+    text-align: center;
+
 }
 .spotifylite{
     padding-bottom: 10vh;
+    text-align: center;
 }
 
 #social{
