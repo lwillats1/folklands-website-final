@@ -75,6 +75,14 @@ p {
     padding-bottom: 5vh;
 }
 
+p a{
+    background-color: #09290A;
+    padding: .5vw;
+    text-align: center;
+    line-height: 200%;
+    border-radius: 20%;
+}
+
 .pegasus{
 filter: invert(100%);
     image-resolution:1000%;
@@ -170,7 +178,7 @@ a:active{
 }
 
 .info-box a {
-    padding: 0;
+  
 }
 
 .info-box p {
