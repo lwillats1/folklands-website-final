@@ -177,9 +177,6 @@ a:active{
     width: 90%;
 }
 
-.info-box a {
-  
-}
 
 .info-box p {
     padding: 0;
@@ -304,11 +301,12 @@ a:active{
 }
 
 .spotify{
-    text-align: right;
-    padding-right: 10vw;
+    text-align: center;
+
 }
 .spotifylite{
     padding-bottom: 10vh;
+    text-align: center;
 }
 
 #social{
